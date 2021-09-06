@@ -1,0 +1,37 @@
+body {
+    font-size: 9pt;
+    font-family: sans-serif;
+    color: rgb(245, 245, 245);
+    background-color: rgb(46, 47, 49);
+}
+
+canvas {
+    border: 1px solid rgb(109, 109, 109);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.settings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.description {
+    margin-top: 5px;
+    font-size: 11pt;
+}
+
+.wrapper > div {
+    padding-left: 10px;
+}
+
+.settings > div {
+    padding: 5px;
+}
+
+.reset {
+    margin-top: 15px;
+}

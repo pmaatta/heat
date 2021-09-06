@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang=en-US>
+    <head>
+        <meta charset="utf-8">
+        <title>PDE</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="pde.css">
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div id="header"><h1>Heat equation visualizer</h1></div>
+            <div></div>
+            <div></div>
+
+            <div>
+                <canvas width="800" height="600"></canvas>
+            </div>
+
+            <div></div>
+            <div></div>
+
+            <div class="settings">
+
+                <div>
+                    <div>
+                        <input type="range" min=1 max=6 value=4 step=1 id="scale">
+                        <label class="label">Resolution (requires reset)</label>
+                    </div>
+                    <div>
+                        <input type="range" min=0.24 max=0.25 value=0.25 step=0.001 id="gamma">
+                        <label class="label">Time scale</label>
+                    </div>
+                    <div>
+                        <input type="range" min=1 max=201 value=81 step=10 id="heatmultiplier">
+                        <label class="label">Heat</label>
+                    </div>
+                    <div class="reset">
+                        <button id="reset">Reset</button>
+                    </div>
+                    <div hidden>
+                        <label>Beta</label>
+                        <input type="number" min=0 max=100 value=3 step=1 id="beta">
+                    </div>
+                </div>
+
+                <div class="description">
+                    <p>Simulates the  <a href="https://en.wikipedia.org/wiki/Heat_equation">heat equation</a> using the finite difference method.</p>
+                    <p>Draw on the canvas!</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="pde.js"></script>
+
+    </body>
+</html>
